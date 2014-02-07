@@ -1,26 +1,159 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!-- Conditional comment for mobile ie7 http://blogs.msdn.com/b/iemobile/ -->
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+
 <head>
-   <meta name="author" content="Matt Stay">
-   <meta name="description" content="A responsive personal syllabus">
-   <title>Codex by Matt Stay</title>
-   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
 
-   
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <link rel="stylesheet" href="style.css">
+  <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
+  <!-- For iPhone 4 with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+  <!-- For first-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+  <!-- For nokia devices: -->
+  <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+
+  <link href='http://fonts.googleapis.com/css?family=Exo+2:200, 300,400,500,700' rel='stylesheet' type='text/css'>
+
+  <!--iOS web app, deletable if not needed -->
+  <!--the script prevents links from opening in mobile safari. https://gist.github.com/1042026
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+  <link rel="apple-touch-startup-image" href="img/l/splash.png">-->
+
+  <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+  <meta http-equiv="cleartype" content="on">
+
+  <meta name=”apple-mobile-web-app-capable” content=”yes” />
+<meta name=”apple-mobile-web-app-status-bar-style” content=”black” />
+
+  <!-- more tags for your 'head' to consider https://gist.github.com/849231 -->
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=1">
+
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-custom.js"></script>
+  <!-- Media Queries Polyfill https://github.com/shichuan/mobile-html5-boilerplate/wiki/Media-Queries-Polyfill -->
+  <script>Modernizr.mq('(min-width:0)') || document.write('<script src="js/libs/respond.min.js">\x3C/script>')</script>
 </head>
 
 <body>
-  <div id="leader">
-    <h2>Bring more of the outside in.</h2>
-    <h3>COMING SOON</h3>
-  </div>
-  <div id="phone">
-    <img src="img/pluna-app-chop.png" alt="pluna">
-  </div>
-</body>
 
+  <div id="container">
+    <header>
+
+    </header>
+    <section id="header-section">
+      <div class="header-wrap">
+        <h1>Pluna</h1>
+        <h2>The Plant Calculator for Cleaner Air</h2>
+      </div>
+    </section>
+    <section id="phone-section">
+        <div class="phone-wrap">
+            <!-- <img src="img/phone.png"> -->
+              <div class="fern">
+                </div>
+                <div class="palm">
+                </div>
+            <div class="iphone-wrap">
+              <div class="iphone">
+              </div>
+            </div>
+        </div>
+    </section>
+    <section id="callout-section">
+      <div class="callout-wrap">
+        <h3>
+          Bring More of the Outside In.
+        </h3>
+      </div>
+         <div class="callout">
+            <p>
+              People spend a lot of time indoors, where air quality is rarely optimal. Plants can significantly improve the indoor environment. Calculate how many plants you need, and have Pluna suggest which plants to use.
+            </p>
+          </div>
+    </section>
+    <section id="description-section">
+    <div class="description-wrap">
+      <div class="fact1">
+        <h4>Indoor Living</h4>
+        <div class="number">87%</div>
+        <p>People in the U.S. spend <span>87%</span> of their day indoors.</p>
+      </div>
+      <div class="fact2">
+        <h4>Serious Hazards</h4>
+        <div class="number">100x</div>
+        <p>According to the EPA, indoor levels of pollution might be as much as 100 times higher than outside.</p>
+      </div>
+    </div>
+    </section>
+    <!-- <section id="plant&#45;section"> -->
+    <!--   <div class="plant&#45;wrap"> -->
+    <!--     <div class="small&#45;plant"></div> -->
+    <!--     <div class="small&#45;plant"></div> -->
+    <!--     <div class="big&#45;plant"></div> -->
+    <!--     <div class="small&#45;plant"></div>         -->
+    <!--     <div class="big&#45;plant"></div>         -->
+    <!--     <div class="small&#45;plant"></div>         -->
+    <!--     <div class="small&#45;plant"></div> -->
+    <!--     <div class="big&#45;plant"></div>         -->
+    <!--     <div class="small&#45;plant"></div> -->
+    <!--     <div class="small&#45;plant"></div> -->
+    <!--   </div> -->
+    <!-- </section> -->
+    <section id="download-section">
+      <div class="download-wrap">
+          <p class="download-callout">Beta Signup:</p>
+          <p class="soon">Coming Soon</p>
+      </div>
+    </section>
+    <footer>
+
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via ant build script -->
+  <script src="js/mylibs/helper.js"></script>
+  <!-- end concatenated and minified scripts-->
+
+  <script>
+    // iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
+    MBP.scaleFix();
+  </script>
+
+  <!-- Debugger - remove for production -->
+  <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
+
+  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+    s.parentNode.insertBefore(g,s)}(document,"script"));
+  </script>
+
+</body>
 </html>
 
