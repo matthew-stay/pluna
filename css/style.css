@@ -230,6 +230,26 @@ p {
 span {
 font-weight:bold;
 }
+.logo {
+  background: url(../img/logo.png);
+  width: 47px;
+  height: 46px;
+  position: fixed;
+  left:30px;
+  top:30px;
+  z-index:10;
+}
+.background--dark {
+  background: url(../img/logo-light.png);
+  width: 47px;
+  height: 46px;
+}
+
+.background--light {
+  background: url(../img/logo.png);
+  width: 47px;
+  height: 46px;
+}
 #header-section {
   width: 100%;
   height: 595px;

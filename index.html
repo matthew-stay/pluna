@@ -54,13 +54,12 @@
 <body>
 
   <div id="container">
-    <header>
-
-    </header>
+      <div class="logo"></div>
+    
     <section id="header-section">
       <div class="header-wrap">
         <h1>Pluna</h1>
-        <h2>The Plant Calculator for Cleaner Air</h2>
+        <h2>The Plant Calculator for Clean Air</h2>
       </div>
     </section>
     <section id="phone-section">
@@ -96,7 +95,7 @@
         <p>People in the U.S. spend <span>87%</span> of their day indoors.</p>
       </div>
       <div class="fact2">
-        <h4>Serious Hazards</h4>
+        <h5>Serious Hazards</h5>
         <div class="number">100x</div>
         <p>According to the EPA, indoor levels of pollution might be as much as 100 times higher than outside.</p>
       </div>
@@ -137,18 +136,14 @@
   <!-- scripts concatenated and minified via ant build script -->
   <script src="js/mylibs/helper.js"></script>
   <!-- end concatenated and minified scripts-->
-
+  <script src="js/script.js"></script>
   <script>
     // iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
     MBP.scaleFix();
   </script>
 
-  <!-- Debugger - remove for production -->
-  <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
-
-  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
   <script>
-    var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+    var _gaq=[["_setAccount","UA-47878258-1"],["_trackPageview"]];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
     g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
     s.parentNode.insertBefore(g,s)}(document,"script"));
@@ -156,4 +151,3 @@
 
 </body>
 </html>
-
