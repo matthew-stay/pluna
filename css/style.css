@@ -300,8 +300,8 @@ background-color: rgba(255,255,255,0.2);
   background-color: #fdfbcd;
 }
 #callout-section {
-  height:380px;
   background-color: #34495e;
+  padding-bottom: 20px;
 }
 #description-section {
   height:350px;
