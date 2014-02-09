@@ -47,6 +47,7 @@
 
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-custom.js"></script>
+  <script src="js/smooth-scroll.js"></script>
   <!-- Media Queries Polyfill https://github.com/shichuan/mobile-html5-boilerplate/wiki/Media-Queries-Polyfill -->
   <script>Modernizr.mq('(min-width:0)') || document.write('<script src="js/libs/respond.min.js">\x3C/script>')</script>
 </head>
@@ -57,20 +58,23 @@
       <div class="logo"></div>
     
     <section id="header-section">
-      <div class="header-wrap">
+      <div class="header-image-wrap">
+        <div class="header-wrap">
         <h1>Pluna</h1>
         <h2>The Plant Calculator for Clean Air</h2>
+        <a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#app" class="button-down"></a>
+        </div>
       </div>
     </section>
     <section id="phone-section">
-        <div class="phone-wrap">
+        <div class="phone-wrap"  id="app">
             <!-- <img src="img/phone.png"> -->
               <div class="fern">
                 </div>
                 <div class="palm">
                 </div>
             <div class="iphone-wrap">
-              <div class="iphone">
+              <div  class="iphone">
               </div>
             </div>
         </div>
