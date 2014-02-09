@@ -43,8 +43,8 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #fff; color: #fff; text-shadow: none; }
+::selection { background: #fff; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
@@ -235,6 +235,9 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author: Matt Stay
    ========================================================================== */
+section {clear:both;}
+.clear {clear:both;}
+
 body {
   min-width: 1060px;
   margin: 0;
@@ -304,7 +307,6 @@ background-color: rgba(255,255,255,0.2);
   padding-bottom: 20px;
 }
 #description-section {
-  height:350px;
   background-color: #2c3e50;
 }
 #plant-section {
@@ -317,6 +319,9 @@ background-color: rgba(255,255,255,0.2);
 }
 #bottom-section {
   height:306px;
+  background-color: #2c3e50;
+}
+#data-section {
   background-color: #2c3e50;
 }
 .coming-soon p {
@@ -353,12 +358,17 @@ height: 778px;
 }
 .callout-wrap {
 margin:0 auto;
-width:60%;
 color:#fff;
 }
 .description-wrap {
 margin:0 auto;
 width:550px;
+overflow:hidden;
+}
+.data-wrap {
+margin:0 auto;
+width:550px;
+overflow:hidden;
 }
 .callout-wrap p {
   color:#fff;
@@ -394,10 +404,14 @@ margin-top:20px;
 .fact {
 width:250px;
 float:left;
-padding:40px 0 60px 0;
+padding:40px 0 20px 0;
 }
 .second {
 margin-left:50px;
+}
+.last {
+width:100%;
+padding-top: 30px;
 }
 .fact-title {
 font-size:0.65em;
@@ -410,7 +424,16 @@ color: #adcfad;
 font-size:4em;
 color: #fff;
 line-height:1em;
-
+}
+.number span {
+  color:#333;
+  font-size:90%;
+}
+.data {
+background: url(../img/data.png);
+height:149px;
+width:543px;
+float:left;
 }
 .sub-description {
 color:#809bab;
