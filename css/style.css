@@ -12,8 +12,8 @@
 
 
 /* =============================================================================
-   HTML5 display definitions
-   ========================================================================== */
+HTML5 display definitions
+======================================================================== */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
@@ -22,8 +22,8 @@ audio:not([controls]) { display: none; }
 
 
 /* =============================================================================
-   Base
-   ========================================================================== */
+Base
+========================================================================== */
 
 /*
  * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
@@ -48,8 +48,8 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
 
 /* =============================================================================
-   Links
-   ========================================================================== */
+Links
+========================================================================== */
 
 a { color: #00e; }
 a:visited { color: #551a8b; }
@@ -61,8 +61,8 @@ a:hover, a:active { outline: 0; }
 
 
 /* =============================================================================
-   Typography
-   ========================================================================== */
+Typography
+========================================================================== */
 
 abbr[title] { border-bottom: 1px dotted; }
 
@@ -96,8 +96,8 @@ sub { bottom: -0.25em; }
 
 
 /* =============================================================================
-   Lists
-   ========================================================================== */
+Lists
+========================================================================== */
 
 ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
 dd { margin: 0 0 0 40px; }
@@ -110,12 +110,12 @@ li {
 
   /*Dirty IE Hack*/
   zoom: 1;
-  *display: inline;
-}
+        *display: inline;
+      }
 
-/* =============================================================================
-   Embedded content
-   ========================================================================== */
+      /* =============================================================================
+      Embedded content
+      ========================================================================== */
 
 /*
  * 1. Improve image quality when scaled in IE7: h5bp.com/d
@@ -132,15 +132,15 @@ svg:not(:root) { overflow: hidden; }
 
 
 /* =============================================================================
-   Figures
-   ========================================================================== */
+Figures
+========================================================================== */
 
 figure { margin: 0; }
 
 
 /* =============================================================================
-   Forms
-   ========================================================================== */
+Forms
+========================================================================== */
 
 form { margin: 0; }
 fieldset { border: 0; margin: 0; padding: 0; }
@@ -234,16 +234,16 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 }
 
 /* =============================================================================
-   Tables
-   ========================================================================== */
+Tables
+========================================================================== */
 
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author: Matt Stay
-   ========================================================================== */
+Author: Matt Stay
+========================================================================== */
 section {clear:both;}
 .clear {clear:both;}
 
@@ -258,13 +258,13 @@ body {
   font-family: 'Exo 2', sans-serif;
 }
 p {
-   font-weight:200;
+  font-weight:200;
   color:#fff;
   font-size:0.9em;
   line-height: 1.5em;
 }
 span {
-font-weight:bold;
+  font-weight:bold;
 }
 .logo {
   background: url(../img/logo.png);
@@ -276,27 +276,27 @@ font-weight:bold;
   z-index:10;
 }
 .button-down {
-display:block;
-width: 5em;
-height: 5em;
-line-height: 4.5em;
-padding: 0;
-background-image: url('../img/dark-arrow.svg');
-background-position: center center;
-background-repeat: no-repeat;
-text-indent: -10em;
-overflow: hidden;
-border: solid 2px #e5e6e7;
-border-radius: 50%;
--moz-transition: all 0.2s ease-in-out;
--webkit-transition: all 0.2s ease-in-out;
--o-transition: all 0.2s ease-in-out;
--ms-transition: all 0.2s ease-in-out;
-transition: all 0.2s ease-in-out;
-margin:0 auto;
+  display:block;
+  width: 5em;
+  height: 5em;
+  line-height: 4.5em;
+  padding: 0;
+  background-image: url('../img/dark-arrow.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-indent: -10em;
+  overflow: hidden;
+  border: solid 2px #e5e6e7;
+  border-radius: 50%;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin:0 auto;
 }
 .button-down:hover {
-background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.2);
 }
 #header-section {
   width: 100%;
@@ -329,6 +329,7 @@ background-color: rgba(255,255,255,0.2);
 #bottom-section {
   height:306px;
   background-color: #2c3e50;
+  position: relative;
 }
 #data-section {
   background-color: #2c3e50;
@@ -340,7 +341,7 @@ background-color: rgba(255,255,255,0.2);
   margin:0
 }
 img {
-display:block;
+  display:block;
 }
 .header-image-wrap {
   position: relative;
@@ -348,39 +349,39 @@ display:block;
   height: 595px;
   background: url(../img/header.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .header-wrap {
   width:100%;
- margin: -17em 0 0 -45%;
- position: absolute;
- top: 50%;
- left: 45%;
- color:#fff;
- text-align:center;
+  margin: -17em 0 0 -45%;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  color:#fff;
+  text-align:center;
 }
 .iphone-wrap {
-position: absolute;
-margin: 75px 0 0 -162px;
-left: 51%;
-width: 353px;
-height: 778px;
+  position: absolute;
+  margin: 75px 0 0 -162px;
+  left: 51%;
+  width: 353px;
+  height: 778px;
 }
 .callout-wrap {
-margin:0 auto;
-color:#fff;
+  margin:0 auto;
+  color:#fff;
 }
 .description-wrap {
-margin:0 auto;
-width:550px;
-overflow:hidden;
+  margin:0 auto;
+  width:550px;
+  overflow:hidden;
 }
 .data-wrap {
-margin:0 auto;
-width:550px;
-overflow:hidden;
+  margin:0 auto;
+  width:550px;
+  overflow:hidden;
 }
 .callout-wrap p {
   color:#fff;
@@ -392,80 +393,80 @@ overflow:hidden;
   font-size:0.95em;
 }
 .plant-list-wrap {
-margin:0 auto;
-overflow:hidden;
+  margin:0 auto;
+  overflow:hidden;
 }
 .plant-list-wrap .sub-description {
-text-align:center;
+  text-align:center;
 }
 .iphone {
-background: url(../img/phone4.png);
-width: 293px;
-height: 650px;
-position: absolute;
-z-index: 5;
+  background: url(../img/phone4.png);
+  width: 293px;
+  height: 650px;
+  position: absolute;
+  z-index: 5;
 }
 .fern {
-background: url(../img/fern.png) no-repeat;
-width:775px;
-height:410px;
-position: absolute;
-left:-250px;
-margin-top:200px;
+  background: url(../img/fern.png) no-repeat;
+  width:775px;
+  height:410px;
+  position: absolute;
+  left:-250px;
+  margin-top:200px;
 }
 .palm {
-background: url(../img/palm.png) no-repeat;
-width:569px;
-height:590px;
-position: absolute;
-right:0;
-margin-top:20px;
+  background: url(../img/palm.png) no-repeat;
+  width:569px;
+  height:590px;
+  position: absolute;
+  right:0;
+  margin-top:20px;
 }
 .fact {
-width:250px;
-float:left;
-padding:40px 0 20px 0;
+  width:250px;
+  float:left;
+  padding:40px 0 20px 0;
 }
 .second {
-margin-left:50px;
+  margin-left:50px;
 }
 .last {
-width:100%;
-padding-top: 30px;
+  width:100%;
+  padding-top: 30px;
 }
 .fact-title {
-font-size:0.65em;
-letter-spacing:0.15em;
-text-transform:uppercase;
-color: #adcfad;
+  font-size:0.65em;
+  letter-spacing:0.15em;
+  text-transform:uppercase;
+  color: #adcfad;
 }
 .number {
   color:#fff;
-font-size:4em;
-color: #fff;
-line-height:1em;
+  font-size:4em;
+  color: #fff;
+  line-height:1em;
 }
 .number span {
   color:#333;
   font-size:90%;
 }
 .data {
-background: url(../img/data.png);
-height:149px;
-width:543px;
-float:left;
+  background: url(../img/data.png);
+  height:149px;
+  width:543px;
+  float:left;
 }
 .sub-description {
-color:#809bab;
+  color:#809bab;
 }
 .plant-wrap {
-margin:0 auto;  
+  margin:0 auto;  
   width:900px;
   padding-top:40px;
   text-align:center;
 }
 .download-callout {
-color:#adcfad;
+  color:#adcfad;
 }
 .download-wrap {
   margin:0 auto;  
@@ -500,7 +501,7 @@ input.email {
   padding-bottom:40px;
 }
 .mc-field-group p {
-padding:10px 0 30px 0;
+  padding:10px 0 30px 0;
 }
 input.button {
   border:none;
@@ -551,8 +552,8 @@ input.button:hover {
   float:left;
 }
 .table {
-	display: table;   /* Allow the centering to work */
-	margin: 0 auto;
+  display: table;   /* Allow the centering to work */
+  margin: 0 auto;
 }
 .plant-list {
   margin:0 auto;
@@ -588,10 +589,19 @@ input.button:hover {
 }
 
 .bottom {
+  position: relative;
   background: url(../img/plant-bottom.png);
   width:953px;
   height:306px;
   margin:0 auto;
+}
+.matt-stay-logo {
+  background: url(../img/matt-stay-web-logo.png);
+  width: 135px;
+  height: 135px;
+  position: absolute;
+  right: 0px;
+  bottom:20px;
 }
 h1 {
   font-size:10em;
@@ -616,19 +626,18 @@ h4 {
   margin:0;
 }
 .bubbleInfo {
-    position: relative;
+  position: relative;
 }
 
 .popup {
-       text-align:center;
-    display:inline-block;
-    width:100px;
-    margin:0 16px;
-
-    font-size: 0.65em;
-letter-spacing: 0.15em;
-text-transform: uppercase;
-color: #adcfad;
+  text-align:center;
+  display:inline-block;
+  width:100px;
+  margin:0 16px;
+  font-size: 0.65em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #adcfad;
 }
 
 
@@ -657,8 +666,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 
 /* ==|== non-semantic helper classes ========================================
-   Please define your styles before this section.
-   ========================================================================== */
+Please define your styles before this section.
+========================================================================== */
 
 /* prevent callout */
 .nocallout {-webkit-touch-callout: none;}
@@ -700,9 +709,9 @@ textarea[contenteditable] {-webkit-appearance: none;}
 
 
 /* ==|== print styles =======================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
+Print styles.
+Inlined to avoid required HTTP connection: h5bp.com/r
+========================================================================== */
 
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
