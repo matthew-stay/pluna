@@ -48,80 +48,130 @@
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-custom.js"></script>
   <script src="js/smooth-scroll.js"></script>
+  <script src="js/chart/Chart.js"></script>
+  
   <!-- Media Queries Polyfill https://github.com/shichuan/mobile-html5-boilerplate/wiki/Media-Queries-Polyfill -->
   <script>Modernizr.mq('(min-width:0)') || document.write('<script src="js/libs/respond.min.js">\x3C/script>')</script>
 </head>
 
-<body>
+<body >
 
   <div id="container">
       <div class="logo"></div>
-    
+      <section id="nav">
+        <!-- <ul> -->
+          <!-- <li>Link 1</li> -->
+          <!-- <li>Link 2</li> -->
+      </section>
     <section id="header-section">
       <div class="header-image-wrap">
+         <!-- <div class="fern"> -->
+         <!--        </div> -->
+         <!--        <div class="palm"> -->
+         <!--        </div> -->
+
+        <div class="shader">
         <div class="header-wrap">
-        <h1>Pluna</h1>
-        <h2>The Plant Calculator for Clean Air</h2>
-        <a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#app" class="button-down"></a>
+        <h1>Houseplants make you healthy</h1>
+        <h2>Learn more or use our plant calculator to get started.</h2>        
+        <div class="button-wrap">
+          <a class="button" href="#indoor-section">
+         <div class="learn-more">Learn More</div>
+       </a>
+          <a class="button" href="#plant-calc-section">         
+         <div class="calculate">Plant Calculator</div>
+         </a>
+         
+      </div>
+        <!-- <a data&#45;scroll data&#45;speed="500" data&#45;easing="easeInOutCubic" data&#45;url="false" href="#callout&#45;section" class="button&#45;down"></a> -->
+        </div>
         </div>
       </div>
     </section>
-    <section id="phone-section">
-        <div class="phone-wrap"  id="app">
-            <!-- <img src="img/phone.png"> -->
-              <div class="fern">
+      <section id="indoor-section">
+        <div class="indoor-icon">Time Spent Indoors</div>
+        
+        <div class="canvas-wrapper">
+            <div class="fern">
                 </div>
-                <div class="palm">
+
+           <div class="palm">
                 </div>
-            <div class="iphone-wrap">
-              <div  class="iphone">
-              </div>
-            </div>
+
+        <canvas id="indoor" class="graph" height="300" width="300"></canvas>
+        <div class="indoor-text"><span class="datapoint">92%</span><p>People in the U.S. spend up to<span class="highlights"> 92%</span> of their day indoors.</p><p> Excluding car travel, we're spending less than <span class="highlights secondary">1.5 hours</span> outside every day.</p></div>
+        
         </div>
+        <a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#compare-section" class="button-down"></a>
+        
+      </section>
+    <!--         <section id="phone&#45;section"> -->
+    <!--     <div class="phone&#45;wrap"  id="app"> -->
+    <!--         <!&#45;&#45; <img src="img/phone.png"> &#45;&#45;> -->
+    <!--                      <div class="iphone&#45;wrap"> -->
+    <!--                    </div> -->
+    <!--     </div> -->
+    <!-- </section> -->
+
     </section>
-    <section id="callout-section">
-      <div class="callout-wrap">
-        <h3>
-          Bring More of the Outside In.
-        </h3>
-      </div>
-         <div class="callout">
-            <p>
-            People spend a lot of time indoors, where air quality is rarely optimal. Plants can significantly improve the indoor environment. Discover what bringing the outside in can do.
-            </p>
-          </div>
-    </section>
-    <section id="description-section">
+      <section id="compare-section">
+         <div class="compare-icon">Serious Hazards</div>
+    <div class="compare-wrapper">
+        <div class="warning-text"><span class="datapoint">100x</span><p>According to the EPA, pollution levels are up to<span class="highlights"> 100x</span> more concentrated indoors.</p></div>
       
-    <div class="description-wrap">
-          <p class="sub-intro first">The Air Inside</p>
-      
-      <div class="fact">
-        <div class="fact-title">Indoor Living</div>
-        <div class="number">87%</div>
-        <p class="sub-description">People in the U.S. spend <span>87%</span> of their day indoors.</p>
-      </div>
-      <div class="fact second">
-        <div class="fact-title">Serious Hazards</div>
-        <div class="number">100x</div>
-        <p class="sub-description">According to the EPA, levels of pollution indoors might be as much as <span>100 times</span> higher than outside.</p>
+        <div class="left">
+        </div>
+        <div class="right">
         </div>
       </div>
-    </section>
-    <section id="data-section">
+        <a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#data-section" class="button-down2"></a>
+      
+     </section>
+     <section id="data-section">
+         <div class="data-icon">Toxin Removal</div>
+       
       <div class="data-wrap">
       <div class="data"></div>
-      <div class="fact last clear">
-        <div class="fact-title">Toxin Removal</div>
-        <div class="number">2 Hours</div>
-        <p class="sub-description">Studies have shown indoor plants can almost completely remove certain toxins in as little as <span>2 hours</span>.</p>
+      <div class="clean-text"><span class="datapoint">2 Hours</span><p>Studies have shown indoor plants can almost completely </br> remove certain toxins in as little as<span class="highlights"> 2 hours.</span></p></div>
+               
       </div>
-      </div>
+        <a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#plant-calc-section" class="button-down3"></a>
+      
     </section>
+      <section id="plant-calc-section">
+   <div class="plant-list-wrap">
+     <div class="data-icon">Plant Calculator</div>
+     <div class="calc-text">So how many plants does it take?</br> Insert your square footage and find out.</div>
+    </div>
+
+<!-- Square Footage: <input name="num2" type="text" id="input1"/>  -->
+<!-- Square Footage: <input name="num2" type="text" id="input1"/>  -->
+<div class="calc_wrap">
+<input type="text" name="input1" id="input1" value="" placeholder="Your Square Footage">
+ <input type="text" name="input2" id="input2" value="60">
+ <a href="#output" onClick="calc()" class="button">
+ <div class="calculate2">
+   Calculate
+ </div>
+ </a>
+ <input type="text" name="output" id="output" value="">
+ </div>
+ <div class="sub-plants"> Plants</div>
+<!-- <a href="#plant&#45;calc&#45;section"> -->
+<!--   <div id="calcuator"> -->
+<!--     Calculate -->
+<!--     </div> -->
+<!--   </a> -->
+ <!-- <a href="javascript: void(0)" onClick="calc()">Calculate</a> -->
+ <!-- <input type="text" name="output" id="output" value=""> -->
+
+<div id="result"></div>
+</section>
     <section id="plant-list-section">
    <div class="plant-list-wrap">
-        <p class="sub-intro secondary">The Plants</p>
-                  <div class="table">
+     <div class="data-icon"></div>
+
+                  <div class="table plant-choices">
              <ul class="plant-list">
                <li class="list-palm trigger"></li>
                 <li class="list-rubber"></li>
@@ -167,7 +217,7 @@
 <form action="http://mattstay.us3.list-manage.com/subscribe/post?u=cd923da49fdee331e059505ae&amp;id=85447115e2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 	
 <div class="mc-field-group">
-	<label for="mce-EMAIL">Receive updates and early beta access.</label>
+	<label for="mce-EMAIL">Receive plant care guides to improve your home.</label>
   
 	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
 </div>
@@ -218,6 +268,51 @@
     g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
     s.parentNode.insertBefore(g,s)}(document,"script"));
   </script>
+  <!-- <script src="js/effects.js"></script> -->
 
+
+  <!-- <script src="js/jquery.inview.js"></script> -->
+ <!--  <script> -->
+ <!-- function createChart() -->
+ <!--        { -->
+ <!--            //Get the context of the canvas element we want to select -->
+ <!--            var ctx = document.getElementById("indoor").getContext("2d"); -->
+ <!--  -->
+ <!--            //Create the data object to pass to the chart -->
+ <!--            var data = { -->
+ <!--                labels : ["January","February","March","April","May","June","July"], -->
+ <!--                datasets : [ -->
+ <!--                            { -->
+ <!--                                fillColor : "rgba(220,220,220,0.5)", -->
+ <!--                                strokeColor : "rgba(220,220,220,1)", -->
+ <!--                                data : [65,59,90,81,56,55,40] -->
+ <!--                            }, -->
+ <!--                            { -->
+ <!--                                fillColor : "rgba(151,187,205,0.5)", -->
+ <!--                                strokeColor : "rgba(151,187,205,1)", -->
+ <!--                                data : [28,48,40,19,96,27,100] -->
+ <!--                            } -->
+ <!--                           ] -->
+ <!--                      }; -->
+ <!--  -->
+ <!--            //The options we are going to pass to the chart -->
+ <!--            options = { -->
+ <!--                barDatasetSpacing : 15, -->
+ <!--                barValueSpacing: 10 -->
+ <!--            }; -->
+ <!--  -->
+ <!--            //Create the chart -->
+ <!--            new Chart(ctx).Bar(data, options); -->
+ <!--        } -->
+ <!--  </script> -->
+<!-- <script src="http://www.appelsiini.net/projects/lazyload/jquery.lazyload.js?v=1.8.3" charset="utf&#45;8"></script> -->
+<!-- <script> -->
+<!--    $(function() { -->
+<!--         $("indoor").lazyload({ -->
+<!--           effect:"fadeIn",  -->
+<!--           container: $("#indoor&#45;section") -->
+<!--         }); -->
+<!--       }); -->
+<!-- </script> -->
 </body>
 </html>
